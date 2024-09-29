@@ -1,20 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 import {
   createRoutesFromElements,
   createBrowserRouter,
   RouterProvider,
   Route
 } from "react-router-dom";
-import SignIn from './Components/pages/SignIn';
-import SignUp from './Components/pages/SignUp';
+import SignIn from './Pages/SignIn';
+import SignUp from './Pages/SignUp';
 import RootLaout from './Components/Layout/RootLaout';
-import Home from './Components/pages/Home';
-import Message from './Components/pages/Message';
-import Notification from './Components/pages/Notification';
-import Setting from './Components/pages/Setting';
+import Home from './Pages/Home';
+import Message from './Pages/Message';
+import Notification from './Pages/Notification';
+import Setting from './Pages/Setting';
 
 
 const router = createBrowserRouter(
