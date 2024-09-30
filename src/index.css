@@ -4,3 +4,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sidebar-item {
+    @apply  text-4xl py-8 w-full inline-block relative flex justify-center text-white ;
+  }
+.sidebar-item.active {
+    @apply  text-primary  after:absolute after:content-[""] after:right-0 after:top-1 after:h-full after:w-3/4 after:bg-white after:rounded-l-[20px]  before:absolute before:content-[""] before:right-0 before:top-1 before:h-full before:w-[8px] before:bg-primary before:rounded-l-[20px] before:z-30;
+  }

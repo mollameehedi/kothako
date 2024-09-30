@@ -5,9 +5,13 @@ import SideBar from './SideBar';
 
 const RootLaout = () => {
   return (
-    <div>
+    <div className='flex w-full h-screen overflow-hidden'>
+      <div className='w-2/12 h-full'>
       <SideBar/>
-       <Outlet />
+    </div>
+       <div className='w-10/12 bg-red-600 h-screen'>
+        <Outlet />
+       </div>
     </div>
   )
 }

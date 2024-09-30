@@ -4,7 +4,7 @@ const AuthCheckText = ({text,children }) => {
     
   return (
     <>
-    <p className='text-sm text-[#03014C] font-normal font-open-sans pt-8'>{text} {children }</p>
+    <p className='text-sm text-secondary font-normal font-open-sans pt-8'>{text} {children }</p>
     </>
   )
 }

@@ -9,7 +9,12 @@ export default {
       'open-sans': ["Open Sans", 'sans-serif'],
       'poppins': ["Poppins", 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#5F35F5',
+        secondary: '#11175D',
+      }
+    },
   },
   plugins: [],
 }
