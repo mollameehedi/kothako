@@ -11,11 +11,12 @@ import { HiDotsVertical } from "react-icons/hi";
 const Friends = () => {
   return (
     <Card>
-    <CardHeader title="Friend List">
+    <CardHeader title="My All Friends">
             <Button><HiDotsVertical/></Button>
     </CardHeader>
+    
     <CardBody className='h-5/6 overflow-y-scroll custom-scrollbar'>
-    <UserItem  src={Avater}>
+         <UserItem  src={Avater}>
             <Text text="Today, 8:56pm" className="text-xs text-[#4D4D4DBF] font-medium font-poppins text-right"/>
         </UserItem>
         <UserItem src={Avater}>

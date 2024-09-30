@@ -15,7 +15,7 @@ const MyGroups = () => {
   return (
     <>
     <Card>
-    <CardHeader title="Block List">
+    <CardHeader title="My Group">
             <Button><HiDotsVertical/></Button>
     </CardHeader>
        <CardBody  className='h-5/6 overflow-y-scroll custom-scrollbar'>
