@@ -5,6 +5,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px; /* Adjust width here */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #88888883; /* Change thumb color */
+    border-radius: 4px; /* Optional: Round the corners */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #55555586; /* Change thumb color on hover */
+}
+
 .sidebar-item {
     @apply  text-4xl py-8 w-full inline-block relative flex justify-center text-white ;
   }

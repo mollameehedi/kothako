@@ -11,7 +11,7 @@ import SideItem from '../Utils/SidBar/SideItem';
 
 const SideBar = () => {
   return (
-    <div className='w-full h-full flex flex-col bg-primary'>
+    <div className='w-full h-full flex flex-col bg-primary rounded-xl'>
         <div className='h-[20%] w-full flex justify-center items-center'>
             <div className='text-center'>
             <Image src={Avater} className='w-[70px] h-[70px] rounded-full'/>
