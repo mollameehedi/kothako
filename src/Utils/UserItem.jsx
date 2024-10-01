@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from './Image'
 
-const UserItem = ({src,children}) => {
+const UserItem = ({src,children,handleClick}) => {
   return (
-    <div className='flex items-center border-b py-2'>
+    <div onClick={handleClick} className='flex items-center border-b py-2'>
     <Image className='h-[55px] w-[55px] rounded-full mr-1' src={src}/>
     <div className='flex w-full items-center justify-between'>
         <div>

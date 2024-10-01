@@ -5,7 +5,7 @@ import ChatBox from '../Components/ChatBox'
 const Message = () => {
   return (
     <div className='flex h-full'>
-      <div className='w-5/12'>
+      <div className='w-5/12 h-full'>
       <ChatList/>
       </div>
       <div className='w-7/12 h-full'>

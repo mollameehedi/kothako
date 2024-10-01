@@ -34,10 +34,25 @@
 
 /* sidebar class start here */
 .sidebar-item {
-    @apply  text-4xl py-8 w-full inline-block relative flex justify-center text-white ;
+    @apply  text-4xl py-4 w-full inline-block relative flex justify-center text-white ;
   }
 .sidebar-item.active {
-    @apply  text-primary  after:absolute after:content-[""] after:right-0 after:top-1 after:h-full after:w-3/4 after:bg-white after:rounded-l-[20px]  before:absolute before:content-[""] before:right-0 before:top-1 before:h-full before:w-[8px] before:bg-primary before:rounded-l-[20px] before:z-30;
+    @apply  text-primary after:absolute after:content-[""] after:right-0 after:top-1 after:h-full after:w-11/12 after:bg-white after:rounded-l-[20px]  before:absolute before:content-[""] before:right-0 before:top-1 before:h-full before:w-[8px] before:bg-primary before:rounded-l-[20px] before:z-30;
   }
 
   /* sidebar class end here */
+
+
+  /* Message class start here */
+  .left_poligon_msg{
+    clip-path: polygon(6% 0, 100% 0, 100% 99%, 0 99%, 6% 60%);
+  }
+  .right_poligon_msg{
+    clip-path: polygon(94% 0, 94% 60%, 100% 100%, 0 100%, 0 0);
+
+  }
+  .sing_message{
+    @apply text-base font-poppins font-medium  leading-6 py-2 rounded inline-block;
+  }
+  
+  /* Message class end here */
