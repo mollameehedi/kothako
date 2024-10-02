@@ -35,7 +35,7 @@ const Setting = () => {
           <CardHeader title="Account Settings" />
           <CardBody>
           <List className="">
-            <ListItem className='setting-list'> <FaKey className='mr-3  text-xl ' />   Password</ListItem>
+            <ListItem className='setting-list'> <FaKey className='mr-3  text-xl' />   Password</ListItem>
             <ListItem className='setting-list'> <VscColorMode  className='mr-3 text-xl' /> Theme.</ListItem>
             <ListItem className='setting-list'> <RiDeleteBin6Fill  className='mr-3 text-xl' /> Delete Account.</ListItem>
           </List>
