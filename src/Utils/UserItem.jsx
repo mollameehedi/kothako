@@ -1,14 +1,15 @@
 import React from 'react'
 import Image from './Image'
+import Text from './Text'
 
-const UserItem = ({src,children,handleClick}) => {
+const UserItem = ({name,subtitle,src,children,handleClick,className}) => {
   return (
     <div onClick={handleClick} className='flex items-center border-b py-2'>
     <Image className='h-[55px] w-[55px] rounded-full mr-1' src={src}/>
     <div className='flex w-full items-center justify-between'>
-        <div>
-            <h4 className='text-sm text-secondary font-semibold font-poppins'>Mehedi</h4>
-            <p className='text-xs text-[#4D4D4DBF] font-medium font-poppins'>Hi,Guy,s Wassup</p>
+        <div className='text-sm text-secondary font-semibold font-poppins'>
+            <h4 className={className}>{name}</h4>
+            <Text text={subtitle} className='text-xs text-[#4D4D4DBF] font-medium font-poppins'/>
         </div>
         <div className='text-right pr-2'>
         {children}

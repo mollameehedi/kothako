@@ -10,22 +10,22 @@ import MyGroups from '../Components/MyGroup'
 const Home = () => {
   return (
     <div className='flex flex-wrap h-full justify-around'>
-      <div className='w-4/12  h-3/6 px-3'>
+      <div className='lg:w-4/12 md:w-6/6 sm:w-full  h-3/6 px-3'>
       <Groups/>
       </div>
-      <div className='w-4/12  h-3/6  px-3'>
+      <div className='lg:w-4/12 md:w-6/6 sm:w-full h-3/6  px-3'>
       <Friends/>
       </div>
-      <div className='w-4/12  h-3/6  px-3'>
+      <div className='lg:w-4/12 md:w-6/6 sm:w-full h-3/6  px-3'>
      <Users/>
       </div>
-      <div className='w-4/12  h-3/6  px-3'>
+      <div className='lg:w-4/12 md:w-6/6 sm:w-full  h-3/6  px-3'>
       <FriendRequest/>
       </div>
-      <div className='w-4/12  h-3/6  px-3'>
+      <div className='lg:w-4/12 md:w-6/6 sm:w-full  h-3/6  px-3'>
       <MyGroups/>
       </div>
-      <div className='w-4/12  h-3/6  px-3'>
+      <div className='lg:w-4/12 md:w-6/6 sm:w-full  h-3/6  px-3'>
       <Blocks/>
       </div>
     </div>

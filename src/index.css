@@ -56,3 +56,7 @@
   }
   
   /* Message class end here */
+
+  .setting-list{
+    @apply text-base font-normal leading-7 items-center px-4 py-3 flex;
+  }

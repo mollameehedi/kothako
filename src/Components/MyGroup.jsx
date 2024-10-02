@@ -19,7 +19,16 @@ const MyGroups = () => {
             <Button><HiDotsVertical/></Button>
     </CardHeader>
        <CardBody  className='h-5/6 overflow-y-scroll custom-scrollbar'>
-       <UserItem  src={Avater}>
+       <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}>
+           <Button handleClick={()=>handleClick(20)} className='btn-primary'><AiOutlineMessage/></Button>
+        </UserItem>
+       <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}>
+           <Button handleClick={()=>handleClick(20)} className='btn-primary'><AiOutlineMessage/></Button>
+        </UserItem>
+       <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}>
+           <Button handleClick={()=>handleClick(20)} className='btn-primary'><AiOutlineMessage/></Button>
+        </UserItem>
+       <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}>
            <Button handleClick={()=>handleClick(20)} className='btn-primary'><AiOutlineMessage/></Button>
         </UserItem>
        </CardBody>

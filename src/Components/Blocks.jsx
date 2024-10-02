@@ -20,7 +20,7 @@ const Blocks = () => {
             <Button><HiDotsVertical/></Button>
     </CardHeader>
     <CardBody className='h-5/6 overflow-y-scroll custom-scrollbar'>
-        <UserItem  src={Avater}>
+    <UserItem name="Mehedi" subtitle='Developer' src={Avater}>
             <ul className='flex gap-1'>
                 <li> <Button handleClick={()=>handleClick(20)} className='btn-success'><FaArrowRotateLeft /></Button> </li>
                 <li> <Button handleClick={()=>handleClick(20)} className='btn-danger'><RiDeleteBinLine/></Button> </li>

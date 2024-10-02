@@ -16,19 +16,19 @@ const Friends = () => {
     </CardHeader>
     
     <CardBody className='h-5/6 overflow-y-scroll custom-scrollbar'>
-         <UserItem  src={Avater}>
+    <UserItem name="Mehedi" subtitle='Developer' src={Avater}>
             <Text text="Today, 8:56pm" className="text-xs text-[#4D4D4DBF] font-medium font-poppins text-right"/>
         </UserItem>
-        <UserItem src={Avater}>
+    <UserItem name="Mehedi" subtitle='Developer' src={Avater}>
             <Text text="Today, 8:56pm" className="text-xs text-[#4D4D4DBF] font-medium font-poppins text-right"/>
         </UserItem>
-        <UserItem src={Avater}>
+    <UserItem name="Mehedi" subtitle='Developer' src={Avater}>
             <Text text="Today, 8:56pm" className="text-xs text-[#4D4D4DBF] font-medium font-poppins text-right"/>
         </UserItem>
-        <UserItem src={Avater}>
+    <UserItem name="Mehedi" subtitle='Developer' src={Avater}>
             <Text text="Today, 8:56pm" className="text-xs text-[#4D4D4DBF] font-medium font-poppins text-right"/>
         </UserItem>
-        <UserItem src={Avater}>
+    <UserItem name="Mehedi" subtitle='Developer' src={Avater}>
             <Text text="Today, 8:56pm" className="text-xs text-[#4D4D4DBF] font-medium font-poppins text-right"/>
         </UserItem>
         </CardBody>

@@ -16,38 +16,38 @@ const ChatList = () => {
   }
   return (
     <div className='flex  flex-col h-full pr-3'>
-      <div className='relative h-[10%] w-full'>
+      <div className='relative h-[8%] w-full'>
         <CiSearch className='absolute left-4 top-1/2 text-[20px] text-black translate-y-center' />
-        <Input type='text' placeholder='search' className='shadow-custom rounded-lg w-full p-5 pl-10 focus:outline-none' />
+        <Input type='text' placeholder='search' className='shadow-custom rounded-lg w-full h-full p-5 pl-10 focus:outline-none' />
       </div>
-      <div className="h-[45%]">
+      <div className="h-[46%]">
       <Card>
         <CardHeader title="Groups">
           <Button><HiDotsVertical /></Button>
         </CardHeader>
         <CardBody className='h-5/6 overflow-y-scroll custom-scrollbar'>
-            <UserItem src={Avater} handleClick={()=> handleClick(20)}/>
-            <UserItem src={Avater} handleClick={()=> handleClick(20)}/>
-            <UserItem src={Avater} handleClick={()=> handleClick(20)}/>
-            <UserItem src={Avater} handleClick={()=> handleClick(20)}/>
-            <UserItem src={Avater} handleClick={()=> handleClick(20)}/>
-            <UserItem src={Avater} handleClick={()=> handleClick(20)}/>
+        <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
         </CardBody>
       </Card>
       </div>
-    <div className="h-[45%]">
+    <div className="h-[46%]">
         
     <Card>
         <CardHeader title="Friends">
           <Button><HiDotsVertical /></Button>
         </CardHeader>
         <CardBody className='h-5/6 overflow-y-scroll custom-scrollbar'>
-        <UserItem src={Avater} handleClick={()=> handleClick(20)}/>
-            <UserItem src={Avater} handleClick={()=> handleClick(20)}/>
-            <UserItem src={Avater} handleClick={()=> handleClick(20)}/>
-            <UserItem src={Avater} handleClick={()=> handleClick(20)}/>
-            <UserItem src={Avater} handleClick={()=> handleClick(20)}/>
-            <UserItem src={Avater} handleClick={()=> handleClick(20)}/>
+        <UserItem name="Hasina" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <UserItem name="Hasina" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <UserItem name="Hasina" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <UserItem name="Khaleda" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <UserItem name="Khaleda" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <UserItem name="Khaleda" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <UserItem name="Khaleda" subtitle='Hi Guys, Wassup!' src={Avater}/>
         </CardBody>
 
       </Card>

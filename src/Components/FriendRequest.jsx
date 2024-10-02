@@ -19,31 +19,37 @@ const FriendRequest = () => {
             <Button><HiDotsVertical/></Button>
     </CardHeader>
     <CardBody  className='h-5/6 overflow-y-scroll custom-scrollbar'>
-    <UserItem  src={Avater}>
+    <UserItem name="Dr Younus" subtitle='Developer' src={Avater}>
             <ul className='flex gap-1'>
                 <li> <Button handleClick={()=>handleClick(20)} className='btn-success'><FaCheck/></Button> </li>
                 <li> <Button handleClick={()=>handleClick(20)} className='btn-danger'><FaMinus/></Button> </li>
             </ul>
         </UserItem>
-        <UserItem  src={Avater}>
+    <UserItem name="Dr Younus" subtitle='Developer' src={Avater}>
             <ul className='flex gap-1'>
                 <li> <Button handleClick={()=>handleClick(20)} className='btn-success'><FaCheck/></Button> </li>
                 <li> <Button handleClick={()=>handleClick(20)} className='btn-danger'><FaMinus/></Button> </li>
             </ul>
         </UserItem>
-        <UserItem  src={Avater}>
+    <UserItem name="Dr Younus" subtitle='Developer' src={Avater}>
             <ul className='flex gap-1'>
                 <li> <Button handleClick={()=>handleClick(20)} className='btn-success'><FaCheck/></Button> </li>
                 <li> <Button handleClick={()=>handleClick(20)} className='btn-danger'><FaMinus/></Button> </li>
             </ul>
         </UserItem>
-        <UserItem  src={Avater}>
+    <UserItem name="Dr Younus" subtitle='Developer' src={Avater}>
             <ul className='flex gap-1'>
                 <li> <Button handleClick={()=>handleClick(20)} className='btn-success'><FaCheck/></Button> </li>
                 <li> <Button handleClick={()=>handleClick(20)} className='btn-danger'><FaMinus/></Button> </li>
             </ul>
         </UserItem>
-        <UserItem  src={Avater}>
+    <UserItem name="Dr Younus" subtitle='Developer' src={Avater}>
+            <ul className='flex gap-1'>
+                <li> <Button handleClick={()=>handleClick(20)} className='btn-success'><FaCheck/></Button> </li>
+                <li> <Button handleClick={()=>handleClick(20)} className='btn-danger'><FaMinus/></Button> </li>
+            </ul>
+        </UserItem>
+    <UserItem name="Dr Younus" subtitle='Developer' src={Avater}>
             <ul className='flex gap-1'>
                 <li> <Button handleClick={()=>handleClick(20)} className='btn-success'><FaCheck/></Button> </li>
                 <li> <Button handleClick={()=>handleClick(20)} className='btn-danger'><FaMinus/></Button> </li>

@@ -20,25 +20,25 @@ const Groups = () => {
             <Button><HiDotsVertical/></Button>
         </CardHeader>
         <CardBody  className='h-5/6 overflow-y-scroll custom-scrollbar'>
-        <UserItem  src={Avater}>
+        <UserItem name="Mern 2308" subtitle='Hi Guys, Wassup!' src={Avater}>
            <Button handleClick={()=>handleClick(20)} className='btn-primary'><FaPlus/></Button>
         </UserItem>
-        <UserItem  src={Avater}>
+        <UserItem name="Mern 2308" subtitle='Hi Guys, Wassup!' src={Avater}>
            <Button handleClick={()=>handleClick(20)} className='btn-primary'><FaPlus/></Button>
         </UserItem>
-        <UserItem  src={Avater}>
+        <UserItem name="Mern 2308" subtitle='Hi Guys, Wassup!' src={Avater}>
            <Button handleClick={()=>handleClick(20)} className='btn-primary'><FaPlus/></Button>
         </UserItem>
-        <UserItem  src={Avater}>
+        <UserItem name="Mern 2308" subtitle='Hi Guys, Wassup!' src={Avater}>
            <Button handleClick={()=>handleClick(20)} className='btn-primary'><FaPlus/></Button>
         </UserItem>
-        <UserItem  src={Avater}>
+        <UserItem name="Mern 2308" subtitle='Hi Guys, Wassup!' src={Avater}>
            <Button handleClick={()=>handleClick(20)} className='btn-primary'><FaPlus/></Button>
         </UserItem>
-        <UserItem  src={Avater}>
+        <UserItem name="Mern 2308" subtitle='Hi Guys, Wassup!' src={Avater}>
            <Button handleClick={()=>handleClick(20)} className='btn-primary'><FaPlus/></Button>
         </UserItem>
-        <UserItem  src={Avater}>
+        <UserItem name="Mern 2308" subtitle='Hi Guys, Wassup!' src={Avater}>
            <Button handleClick={()=>handleClick(20)} className='btn-primary'><FaPlus/></Button>
         </UserItem>
         </CardBody>
