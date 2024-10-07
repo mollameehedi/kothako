@@ -1,12 +1,12 @@
 import React from 'react'
-import Card from '../Utils/Card'
-import CardHeader from '../Utils/CardHeader'
-import CardBody from '../Utils/Cardbody'
+import Card from '../Components/Common/Card'
+import CardHeader from '../Components/Common/CardHeader'
+import CardBody from '../Components/Common/Cardbody'
 import Avater from '../assets/avater.jpg'
-import List from '../Utils/List'
-import ListItem from '../Utils/ListItem'
+import List from '../Components/Common/List'
+import ListItem from '../Components/Common/ListItem'
 import { CiEdit } from "react-icons/ci";
-import UserProfile from '../Utils/Setting/UserProfile'
+import UserProfile from '../Components/Common/Setting/UserProfile'
 import { MdAddPhotoAlternate  ,MdHelpOutline   } from "react-icons/md";
 import { BiSolidEditAlt } from "react-icons/bi";
 import { FaCommentDots } from "react-icons/fa6";

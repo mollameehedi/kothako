@@ -1,14 +1,14 @@
 import React from 'react'
-import Card from '../Utils/Card'
-import UserItem from '../Utils/UserItem'
-import Button from '../Utils/Button'
-import Avater from '../assets/avater.jpg'
-import Input from '../Utils/Input'
+import Card from '../Common/Card'
+import UserItem from '../Common/UserItem'
+import Button from '../Common/Button'
+import Avater from '../../assets/avater.jpg'
+import Input from '../Common/Input'
 import { IoIosSend } from "react-icons/io";
-import Header from '../Utils/Message/Header'
+import Header from '../Common/Message/Header'
 
-import LeftSingleMessage from '../Utils/Message/LeftSingleMessage'
-import RightSingleMessage from '../Utils/Message/RightSingleMessage'
+import LeftSingleMessage from '../Common/Message/LeftSingleMessage'
+import RightSingleMessage from '../Common/Message/RightSingleMessage'
 
 const ChatBox = () => {
   return (

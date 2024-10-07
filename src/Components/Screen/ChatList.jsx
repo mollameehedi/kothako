@@ -1,13 +1,13 @@
 import React from 'react'
-import Input from '../Utils/Input'
+import Input from '../Common/Input'
 import { CiSearch } from "react-icons/ci";
-import Card from '../Utils/Card';
-import Avater from '../assets/avater.jpg'
-import Button from '../Utils/Button';
-import CardHeader from '../Utils/CardHeader';
-import CardBody from '../Utils/Cardbody';
+import Card from '../Common/Card';
+import Avater from '../../assets/avater.jpg'
+import Button from '../Common/Button';
+import CardHeader from '../Common/CardHeader';
+import CardBody from '../Common/Cardbody';
 import { HiDotsVertical } from "react-icons/hi";
-import UserItem from '../Utils/UserItem';
+import UserItem from '../Common/UserItem';
 
 const ChatList = () => {
   let handleClick = (e) =>{

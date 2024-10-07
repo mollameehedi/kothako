@@ -1,13 +1,13 @@
 import React from 'react'
-import Image from '../Utils/Image'
+import Image from '../Components/Common/Image'
 import Avater from '../assets/avater.jpg';
-import Text from '../Utils/Text';
+import Text from '../Components/Common/Text';
 import { NavLink } from "react-router-dom";
 import { AiOutlineMessage,AiOutlineHome } from "react-icons/ai";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { HiOutlineCog6Tooth } from "react-icons/hi2";
 import { IoLogOutOutline } from "react-icons/io5";
-import SideItem from '../Utils/SidBar/SideItem';
+import SideItem from '../Components/Common/SidBar/SideItem';
 
 const SideBar = () => {
   return (

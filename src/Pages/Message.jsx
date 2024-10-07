@@ -1,6 +1,6 @@
 import React from 'react'
-import ChatList from '../Components/ChatList'
-import ChatBox from '../Components/ChatBox'
+import ChatList from '../Components/Screen/ChatList'
+import ChatBox from '../Components/Screen/ChatBox'
 
 const Message = () => {
   return (

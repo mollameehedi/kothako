@@ -1,12 +1,12 @@
 import React from 'react'
 import signInImage from '../assets/signin.jpg';
-import Image from '../Utils/Image';
-import AuthHeader from '../Utils/Auth/AuthHeader';
-import Text from '../Utils/Text';
-import AuthInput from '../Utils/Auth/AuthInput';
-import AuthButton from '../Utils/Auth/AuthButton';
+import Image from '../Components/Common/Image';
+import AuthHeader from '../Components/Common/Auth/AuthHeader';
+import Text from '../Components/Common/Text';
+import AuthInput from '../Components/Common/Auth/AuthInput';
+import AuthButton from '../Components/Common/Auth/AuthButton';
 import { Link } from 'react-router-dom';
-import AuthCheckText from '../Utils/Auth/AuthCheckText';
+import AuthCheckText from '../Components/Common/Auth/AuthCheckText';
 
 const SignIn = () => {
   return (

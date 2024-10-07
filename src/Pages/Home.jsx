@@ -1,10 +1,10 @@
 import React from 'react'
-import Friends from '../Components/Friends'
-import Users from '../Components/Users'
-import FriendRequest from '../Components/FriendRequest'
-import Blocks from '../Components/Blocks'
-import Groups from '../Components/Groups'
-import MyGroups from '../Components/MyGroup'
+import Friends from '../Components/Screen/Friends'
+import Users from '../Components/Screen/Users'
+import FriendRequest from '../Components/Screen/FriendRequest'
+import Blocks from '../Components/Screen/Blocks'
+import Groups from '../Components/Screen/Groups'
+import MyGroups from '../Components/Screen/MyGroup'
 
 
 const Home = () => {

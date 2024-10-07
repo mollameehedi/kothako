@@ -1,11 +1,11 @@
 import React from 'react'
-import UserItem from '../Utils/UserItem'
-import Card from '../Utils/Card'
-import Avater from '../assets/avater.jpg'
-import Text from '../Utils/Text'
-import Button from '../Utils/Button';
-import CardHeader from '../Utils/CardHeader';
-import CardBody from '../Utils/Cardbody';
+import UserItem from '../Common/UserItem'
+import Card from '../Common/Card'
+import Avater from '../../assets/avater.jpg'
+import Text from '../Common/Text'
+import Button from '../Common/Button';
+import CardHeader from '../Common/CardHeader';
+import CardBody from '../Common/Cardbody';
 import { HiDotsVertical } from "react-icons/hi";
 
 const Friends = () => {

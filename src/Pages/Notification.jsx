@@ -1,7 +1,7 @@
 import React from 'react'
 import { CiSearch } from 'react-icons/ci'
-import Input from '../Utils/Input'
-import Notifications from '../Components/Notifications'
+import Input from '../Components/Common/Input'
+import Notifications from '../Components/Screen/Notifications'
 
 
 const Notification = () => {

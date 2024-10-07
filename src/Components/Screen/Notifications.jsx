@@ -1,7 +1,7 @@
 import React from 'react'
-import Card from '../Utils/Card'
-import CardBody from '../Utils/Cardbody'
-import NotificationItem from '../Utils/Notification/NotificationItem'
+import Card from '../Common/Card'
+import CardBody from '../Common/Cardbody'
+import NotificationItem from '../Common/Notification/NotificationItem'
 
 const Notifications = () => {
   return (
