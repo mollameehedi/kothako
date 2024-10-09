@@ -21,28 +21,35 @@
 
 /* common class start here */
 .btn-primary{
-    @apply text-xl font-poppins font-semibold text-white bg-primary p-2 rounded-sm;
+    @apply lg:text-xl text-lg font-poppins font-semibold text-white bg-primary lg:p-2 p-1 rounded-sm;
 } 
 .btn-success{
-    @apply text-xl font-poppins font-semibold text-white bg-green-600 p-2 rounded-sm;
+    @apply lg:text-xl text-lg font-poppins font-semibold text-white bg-green-600  lg:p-2 p-1 rounded-sm;
 } 
 .btn-danger{
-    @apply text-xl font-poppins font-semibold text-white bg-red-600  p-2 rounded-sm;
+    @apply lg:text-xl text-lg font-poppins font-semibold text-white bg-red-600  lg:p-2 p-1 rounded-sm;
 } 
 
 /* common class end here */
 
 /* sidebar class start here */
 .sidebar-item {
-    @apply  text-4xl py-4 w-full inline-block relative flex justify-center text-white ;
+    @apply  lg:text-4xl text-2xl lg:py-4 py-3 w-full inline-block relative flex justify-center text-white ;
   }
 .sidebar-item.active {
-    @apply  text-primary after:absolute after:content-[""] after:right-0 after:top-[50%] after:translate-y-center after:h-full after:w-11/12 after:bg-white after:rounded-l-[20px]  before:absolute before:content-[""] before:right-0 before:top-[50%] before:translate-y-center before:h-full before:w-[8px] before:bg-primary before:rounded-l-[20px] before:z-30;
+    @apply  text-primary after:absolute after:content-[""] after:right-0 after:top-[50%] after:translate-y-center after:h-full after:w-11/12 after:bg-white after:rounded-l-[20px]  before:absolute before:content-[""] before:right-0 before:top-[50%] before:translate-y-center before:h-full before:lg:w-[8px] before:w-[5px] before:bg-primary before:rounded-l-[20px] before:z-30;
   }
 
   /* sidebar class end here */
 
+  .home_grid {
+    @apply lg:w-4/12 md:w-6/12 w-full h-3/6 md:px-3;
+}
 
+
+  /* home page css start*/
+
+/* home page css end */
   /* Message class start here */
   .left_poligon_msg{
     clip-path: polygon(6% 0, 100% 0, 100% 99%, 0 99%, 6% 60%);

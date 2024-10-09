@@ -9,23 +9,23 @@ import MyGroups from '../Components/Screen/MyGroup'
 
 const Home = () => {
   return (
-    <div className='flex flex-wrap h-full justify-around'>
-      <div className='lg:w-4/12 md:w-6/6 sm:w-full  h-3/6 px-3'>
+    <div className='md:flex flex-wrap h-full justify-around overflow-x-scroll'>
+      <div className='home_grid'>
       <Groups/>
       </div>
-      <div className='lg:w-4/12 md:w-6/6 sm:w-full h-3/6  px-3'>
+      <div className='home_grid'>
       <Friends/>
       </div>
-      <div className='lg:w-4/12 md:w-6/6 sm:w-full h-3/6  px-3'>
+      <div className='home_grid'>
      <Users/>
       </div>
-      <div className='lg:w-4/12 md:w-6/6 sm:w-full  h-3/6  px-3'>
+      <div className='home_grid'>
       <FriendRequest/>
       </div>
-      <div className='lg:w-4/12 md:w-6/6 sm:w-full  h-3/6  px-3'>
+      <div className='home_grid'>
       <MyGroups/>
       </div>
-      <div className='lg:w-4/12 md:w-6/6 sm:w-full  h-3/6  px-3'>
+      <div className='home_grid'>
       <Blocks/>
       </div>
     </div>

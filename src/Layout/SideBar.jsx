@@ -13,9 +13,9 @@ const SideBar = () => {
   return (
     <div className='w-full h-full flex flex-col bg-primary rounded-xl'>
         <div className='h-[20%] w-full flex justify-center items-center'>
-            <div className='text-center'>
-            <Image src={Avater} className='w-[70px] h-[70px] rounded-full'/>
-            <Text text='Mehedi' className='text-white'/>
+            <div className='text-center w-full'>
+            <Image src={Avater} className='lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] rounded-full inline-block'/>
+            <Text text='Mehedi' className='text-white text-xs'/>
             </div>
         </div>
         <div className='h-[70%] w-full'>

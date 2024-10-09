@@ -17,7 +17,7 @@ import Setting from './Pages/Setting';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route >
-        <Route path='/signin' element={<SignIn />} />
+        <Route  path='/signin' element={<SignIn />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/' element={<RootLaout/>}>
           <Route index element={<Home />} />
