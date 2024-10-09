@@ -12,7 +12,7 @@ import RightSingleMessage from '../Common/Message/RightSingleMessage'
 
 const ChatBox = () => {
   return (
-    <Card className="h-full flex flex-col justify-between">
+    <Card className="h-full flex flex-col justify-between w-full">
       <Header src={Avater}/>
       <div className='h-[80%] w-full overflow-y-scroll custom-scrollbar'>
        <LeftSingleMessage message='Hello, Need a Website can you help me' date='Today, 2:13pm'/>
