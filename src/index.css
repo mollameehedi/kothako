@@ -59,7 +59,7 @@
 
   }
   .sing_message{
-    @apply text-base font-poppins font-medium  leading-6 py-2 rounded inline-block;
+    @apply lg:text-base text-xs  font-poppins font-medium  lg:leading-6 leading-4 lg:py-2 py-1 rounded inline-block;
   }
   
   /* Message class end here */

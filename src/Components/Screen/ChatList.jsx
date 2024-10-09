@@ -7,7 +7,7 @@ import Button from '../Common/Button';
 import CardHeader from '../Common/CardHeader';
 import CardBody from '../Common/Cardbody';
 import { HiDotsVertical } from "react-icons/hi";
-import UserItem from '../Common/UserItem';
+import ChatUser from '../Common/Message/ChatUser';
 
 const ChatList = () => {
   let handleClick = (e) =>{
@@ -22,32 +22,32 @@ const ChatList = () => {
       </div>
       <div className="h-[46%]">
       <Card>
-        <CardHeader title="Groups">
-          <Button><HiDotsVertical /></Button>
+        <CardHeader title="Groups" className='text-base'>
+          <Button className='md:inline-block hidden'><HiDotsVertical /></Button>
         </CardHeader>
         <CardBody className='h-5/6 overflow-y-scroll custom-scrollbar'>
-        <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
-        <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
-        <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
-        <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
-        <UserItem name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <ChatUser name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <ChatUser name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <ChatUser name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <ChatUser name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <ChatUser name="Buddy" subtitle='Hi Guys, Wassup!' src={Avater}/>
         </CardBody>
       </Card>
       </div>
     <div className="h-[46%]">
         
     <Card>
-        <CardHeader title="Friends">
-          <Button><HiDotsVertical /></Button>
+        <CardHeader title="Friends" className='text-base'>
+          <Button  className='md:inline-block hidden'><HiDotsVertical /></Button>
         </CardHeader>
         <CardBody className='h-5/6 overflow-y-scroll custom-scrollbar'>
-        <UserItem name="Hasina" subtitle='Hi Guys, Wassup!' src={Avater}/>
-        <UserItem name="Hasina" subtitle='Hi Guys, Wassup!' src={Avater}/>
-        <UserItem name="Hasina" subtitle='Hi Guys, Wassup!' src={Avater}/>
-        <UserItem name="Khaleda" subtitle='Hi Guys, Wassup!' src={Avater}/>
-        <UserItem name="Khaleda" subtitle='Hi Guys, Wassup!' src={Avater}/>
-        <UserItem name="Khaleda" subtitle='Hi Guys, Wassup!' src={Avater}/>
-        <UserItem name="Khaleda" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <ChatUser name="Hasina" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <ChatUser name="Hasina" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <ChatUser name="Hasina" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <ChatUser name="Khaleda" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <ChatUser name="Khaleda" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <ChatUser name="Khaleda" subtitle='Hi Guys, Wassup!' src={Avater}/>
+        <ChatUser name="Khaleda" subtitle='Hi Guys, Wassup!' src={Avater}/>
         </CardBody>
 
       </Card>

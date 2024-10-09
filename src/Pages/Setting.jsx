@@ -17,8 +17,8 @@ import { VscColorMode } from "react-icons/vsc";
 
 const Setting = () => {
   return (
-    <div className='w-full h-full flex'>
-      <div className='w-1/2 pr-3'>
+    <div className='w-full h-full lg:flex overflow-y-scroll'>
+      <div className='lg:w-1/2 w-full lg:pr-3'>
         <Card>
           <CardHeader title="Profile Settings" />
           <UserProfile name="Mehedi" subtitle='stay Home stay safe' src={Avater} />
@@ -30,7 +30,7 @@ const Setting = () => {
           </List>
         </Card>
       </div>
-      <div className='w-1/2 pl-3'>
+      <div className='lg:w-1/2 w-full lg:pl-3'>
         <Card>
           <CardHeader title="Account Settings" />
           <CardBody>
