@@ -7,8 +7,24 @@ import AuthInput from '../Components/Common/Auth/AuthInput';
 import AuthButton from '../Components/Common/Auth/AuthButton';
 import { Link } from 'react-router-dom';
 import AuthCheckText from '../Components/Common/Auth/AuthCheckText';
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import authService from '../services/AuthService';
 
-const SignIn = () => {
+const SignUp = () => {
+  const auth = getAuth();
+
+  let handleLogin = () =>{
+
+    authService.signup('mollameehedi@gmail.com','123456789')
+    .then(res=>{
+      console.log(res);
+      
+    })
+    .catch(error => {
+      console.log(error);
+      
+    })
+   }
   return (
     <div className='w-full h-screen'>
       <div className='flex w-100 h-full justify-between'>
@@ -19,7 +35,7 @@ const SignIn = () => {
             <AuthInput placeholder='Enter Your Email Address' type='email'label="Email Address"/>
             <AuthInput placeholder='Enter Your Email Address' type='text'label="Full name"/>
             <AuthInput placeholder='Enter Your Email Address' type='password'label="Password"/>
-            <AuthButton text="Sign Up" type='submit'/>
+            <AuthButton handleClick={handleLogin} text="Sign Up" type='submit'/>
             <AuthCheckText text='Already have an account ?' >
                 <Link className='text-[#EA6C00]' to='/signin'> Sign In</Link>
               </AuthCheckText>
@@ -33,4 +49,4 @@ const SignIn = () => {
   )
 }
 
-export default SignIn
+export default SignUp
