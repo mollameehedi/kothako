@@ -7,39 +7,56 @@ import AuthInput from '../Components/Common/Auth/AuthInput';
 import AuthButton from '../Components/Common/Auth/AuthButton';
 import { Link } from 'react-router-dom';
 import AuthCheckText from '../Components/Common/Auth/AuthCheckText';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { useFormik } from 'formik';
+import Form from '../Components/Common/Form';
 import authService from '../services/AuthService';
+import {signupValidation} from '../utilities/formValidation/authValidation'
 
 const SignUp = () => {
-  const auth = getAuth();
+  const formik = useFormik({
+    initialValues: {
+      email: '',
+      full_name:'',
+      password:''
+    },
+    validationSchema:signupValidation,
+    onSubmit: values => {
+      authService.signup(values.email,values.password)
+      .then(response => {
+console.log(response);
 
-  let handleLogin = () =>{
+      })
+      .catch(error =>{
+console.log(error);
 
-    authService.signup('mollameehedi@gmail.com','123456789')
-    .then(res=>{
-      console.log(res);
+      })
       
-    })
-    .catch(error => {
-      console.log(error);
-      
-    })
-   }
+    },
+  });
   return (
     <div className='w-full h-screen'>
       <div className='flex w-100 h-full justify-between'>
           <div className='w-2/4 h-full flex justify-center items-center'>
-            <div className='w-4/5'>
+            <Form className='w-4/5' handleSubmit={formik.handleSubmit}>
             <AuthHeader title='Get started with easily register'/>
             <Text className='text-xl text-black font-normal font-open-sans pb-4 opacity-50 pt-3' text='Free register and you can enjoy it'/>
-            <AuthInput placeholder='Enter Your Email Address' type='email'label="Email Address"/>
-            <AuthInput placeholder='Enter Your Email Address' type='text'label="Full name"/>
-            <AuthInput placeholder='Enter Your Email Address' type='password'label="Password"/>
-            <AuthButton handleClick={handleLogin} text="Sign Up" type='submit'/>
+            <AuthInput placeholder='Enter Your Email Address' type='email'label="Email Address" name='email' handleChange={formik.handleChange} value={formik.values.email}/>
+            {formik.touched.email && formik.errors.email ? (
+         <div className='error-text'>{formik.errors.email}</div>
+       ) : null}
+            <AuthInput placeholder='Enter Your Email Address' type='text'label="Full name" name='full_name'  handleChange={formik.handleChange} value={formik.values.full_name}/>
+            {formik.touched.full_name && formik.errors.full_name ? (
+         <div className='error-text'>{formik.errors.full_name}</div>
+       ) : null}
+            <AuthInput placeholder='Enter Your Email Address' type='password' label="Password" name='password'  handleChange={formik.handleChange} value={formik.values.password} />
+            {formik.touched.password && formik.errors.password ? (
+         <div className='error-text '>{formik.errors.password}</div>
+       ) : null}
+            <AuthButton text="Sign Up" type='submit'/>
             <AuthCheckText text='Already have an account ?' >
                 <Link className='text-[#EA6C00]' to='/signin'> Sign In</Link>
               </AuthCheckText>
-            </div>
+            </Form>
           </div>
           <div className='w-2/4 bg-emerald-600'>
             <Image className='w-full h-full object-cover ' src={signUpImage}/>

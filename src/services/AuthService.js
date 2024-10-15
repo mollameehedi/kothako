@@ -1,7 +1,7 @@
 import { getAuth, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, signOut } from "firebase/auth";
-
+import app from '../../firebase.config'; //
 // Initialize Firebase Authentication
-const auth = getAuth();
+const auth = getAuth()
 
 const authService = {
   // Sign up a new user

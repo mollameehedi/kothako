@@ -12,7 +12,7 @@ import Home from './Pages/Home';
 import Message from './Pages/Message';
 import Notification from './Pages/Notification';
 import Setting from './Pages/Setting';
-import { routes } from './router/routes';
+import { routes } from './router/index';
 
 
 const router = createBrowserRouter(
