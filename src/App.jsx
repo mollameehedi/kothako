@@ -12,26 +12,25 @@ import Home from './Pages/Home';
 import Message from './Pages/Message';
 import Notification from './Pages/Notification';
 import Setting from './Pages/Setting';
+import { routes } from './router/index';
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route >
-        <Route  path='/signin' element={<SignIn />} />
-        <Route path='/signup' element={<SignUp />} />
-        <Route path='/' element={<RootLaout/>}>
+        <Route  path={routes.signin} element={<SignIn />} />
+        <Route path={routes.signup} element={<SignUp />} />
+        <Route path={routes.home} element={<RootLaout/>}>
           <Route index element={<Home />} />
-          <Route path='message' element={<Message />} />
-         <Route path='notification' element={<Notification />} />
-         <Route path='settings' element={<Setting />} />
+          <Route path={routes.message} element={<Message />} />
+         <Route path={routes.notificaiton} element={<Notification />} />
+         <Route path={routes.settings} element={<Setting />} />
       </Route>
     </Route>
   )
 );
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
      <RouterProvider router={router} />

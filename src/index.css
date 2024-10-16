@@ -19,6 +19,8 @@
 }
 
 
+/*  */
+
 /* common class start here */
 .btn-primary{
     @apply lg:text-xl text-lg font-poppins font-semibold text-white bg-primary lg:p-2 p-1 rounded-sm;
@@ -29,6 +31,9 @@
 .btn-danger{
     @apply lg:text-xl text-lg font-poppins font-semibold text-white bg-red-600  lg:p-2 p-1 rounded-sm;
 } 
+.error-text{
+  @apply text-red-800 text-sm p-1 font-open-sans font-medium;
+}
 
 /* common class end here */
 
@@ -67,3 +72,4 @@
   .setting-list{
     @apply text-base font-normal leading-7 items-center px-4 py-3 flex;
   }
+

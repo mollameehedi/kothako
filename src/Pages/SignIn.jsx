@@ -7,8 +7,15 @@ import AuthInput from '../Components/Common/Auth/AuthInput';
 import AuthButton from '../Components/Common/Auth/AuthButton';
 import { Link } from 'react-router-dom';
 import AuthCheckText from '../Components/Common/Auth/AuthCheckText';
+// import AuthService from '../service/AuthService';
+import Cookie from "js-cookie";
 
+// Cookie.set('_token', response.accessToken, { expires: 7 })/
 const SignIn = () => {
+  let hangleClick = () =>{
+   console.log('mehedi');
+   
+  }
   return (
     <div className='w-full h-screen'>
     <div className='flex w-100 h-full justify-between'>
@@ -18,7 +25,7 @@ const SignIn = () => {
           <Text className='text-xl text-black font-normal font-open-sans pb-4 opacity-50 pt-3' text='Free register and you can enjoy it'/>
           <AuthInput placeholder='Enter Your Email Address' type='email'label="Email Address"/>
           <AuthInput placeholder='Enter Your Email Address' type='password'label="Password"/>
-          <AuthButton text="Sign Up" type='submit'/>
+          <AuthButton hangleClick={hangleClick} text="Sign In" type='submit'/>
           <AuthCheckText text='Login to Continue ?' >
               <Link className='text-[#EA6C00]' to='/signup'> Sign Up</Link>
             </AuthCheckText>
