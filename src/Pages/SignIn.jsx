@@ -8,8 +8,9 @@ import AuthButton from '../Components/Common/Auth/AuthButton';
 import { Link } from 'react-router-dom';
 import AuthCheckText from '../Components/Common/Auth/AuthCheckText';
 // import AuthService from '../service/AuthService';
+import Cookie from "js-cookie";
 
-
+// Cookie.set('_token', response.accessToken, { expires: 7 })/
 const SignIn = () => {
   let hangleClick = () =>{
    console.log('mehedi');

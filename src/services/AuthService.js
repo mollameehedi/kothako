@@ -1,13 +1,25 @@
-import { getAuth, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, signOut,sendEmailVerification } from "firebase/auth";
 import app from '../../firebase.config'; //
+// import requests from './firebaseRequests';
+
 // Initialize Firebase Authentication
 const auth = getAuth()
 
 const authService = {
   // Sign up a new user
-  signup: async (email, password) => {
+  signup: async (email, password,displayName) => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      await updateProfile(userCredential.user, { displayName });
+      await sendEmailVerification(userCredential.user); // Send verification email
+
+      const user = userCredential.user;
+      const userData = {
+        uid: user.uid,
+        email: user.email,
+        displayName
+      };
+      // await requests.add('users', userData);
       return userCredential.user; // Return user information
     } catch (error) {
       throw new Error(`Signup failed: ${error.message}`); // Propagate error

@@ -5,14 +5,18 @@ import AuthHeader from '../Components/Common/Auth/AuthHeader';
 import Text from '../Components/Common/Text';
 import AuthInput from '../Components/Common/Auth/AuthInput';
 import AuthButton from '../Components/Common/Auth/AuthButton';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import AuthCheckText from '../Components/Common/Auth/AuthCheckText';
 import { useFormik } from 'formik';
 import Form from '../Components/Common/Form';
 import authService from '../services/AuthService';
-import {signupValidation} from '../utilities/formValidation/authValidation'
+import {signupValidation,} from '../utilities/formValidation/authValidation'
+import { routes } from '../router';
+
 
 const SignUp = () => {
+  const navigate = useNavigate();
+
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -21,13 +25,12 @@ const SignUp = () => {
     },
     validationSchema:signupValidation,
     onSubmit: values => {
-      authService.signup(values.email,values.password)
+      authService.signup(values.email,values.password,values.full_name)
       .then(response => {
-console.log(response);
-
+        console.log(response);
       })
       .catch(error =>{
-console.log(error);
+        console.log(error);
 
       })
       
